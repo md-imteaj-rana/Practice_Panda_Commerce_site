@@ -13,11 +13,82 @@
 
     <!--CSS-->
     <link rel="stylesheet" href="styles.css">
+
+    <!--DaisyUi cdn-->
+    <link href="https://cdn.jsdelivr.net/npm/daisyui@5/themes.css" rel="stylesheet" type="text/css" />
+
+    <!--font awsome cdn-->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css" integrity="sha512-2SwdPD6INVrV/lHTZbO2nodKhrnDdJK9/kg2XD1r9uGqPo1cUbujc+IYdlYdEErWNu69gVcYgdxlmVmzTWnetw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+
 </head>
 
 <body>
     <header>
+        <nav class="my-6 mx-12 flex items-center justify-between">
+            <div class="">
+            <img src="images/logo.png" alt="">
+            </div>
 
+            <div class="">
+            <input type="text" placeholder="Search" class="input border-2 border-none bg-gray-200 relative rounded-full px-8 py-3 w-lg left-12"/>
+            <i class="fa-solid fa-magnifying-glass absolute top-10"></i>
+            </div>
+
+            <div class="">
+                <ul class="font-bold text-gray-500 flex gap-5">
+                    <li class=""><a href="">Home</a></li>
+                    <li class=""><a href="">Product<i class="fa-solid fa-angle-down"></i></a>
+                    <ul class="dropdown-nav-items hidden">
+                    <li><a href="#">Product 1</a></li>
+                    <li><a href="#">Product 2</a></li>
+                    <li><a href="#">Product 3</a></li>
+                    <li><a href="#">Product 4</a></li>
+                    <li><a href="#">Product 5</a></li>
+                      </ul>
+                    </li>
+                    <li class=""><a href="">Backpack</a></li>
+                    <li class=""><a href="">Contact Us</a></li>
+                </ul>
+            </div>
+        </nav>
+
+        <!--Banner-->
+        <div class="banner m-17">
+            <div class=" bg-[#FEEAE9] p-7 rounded-2xl flex justify-between items-center pl-13">
+                <div class="banner_l">
+                    <h1 class="text-[56px] font-bold">Mi LED TV 4A PRO 32</h1>
+                    <p class="text-[16px] text-gray-600 my-4">Amet minim mollit non deserunt ullamco est sit aliqua dolor 
+                        <br>do amet sint. Velit officia consequat duis enim velit mollit. 
+                        <br>Exercitation veniam consequat sunt nostrud amet.</p>
+                    
+                    <h1 class="font-bold text-[41px] text-[#FF4D94]">$1289</h1>
+                    <button class="btn btn-secondary text-white bg-[#FF4D94] px-6 py-3 rounded-lg my-4">BUY NOW <i class="fa-solid fa-arrow-right"></i></button>
+                </div>
+
+                <div class="banner_r">
+                    <img src="images/banner-images/tv.png" alt="" class=" size-100">
+                </div>
+            </div>
+        </div>
+
+        <!--categories-->
+        <div class="catgr mx-25 my-30">
+            <h1 class="text-[36px] font-bold mb-6">Categories</h1>
+            <div class="cat_cards flex items-center gap-5">
+                <div class="cc flex items-center gap-10 text-white pr-3 pl-10 py-2 bg-gradient-to-b from-orange-400 to-yellow-400 rounded-2xl">
+                    <h1 class="text-[36px] font-semibold">Watches</h1>
+                    <img src="images/categories/watch.png" alt="">
+                </div>
+                <div class="cc flex items-center gap-20 text-white pr-3 pl-10 py-2 bg-gradient-to-b from-pink-400 to-pink-600 rounded-2xl">
+                    <h1 class="text-[36px] font-semibold">Bags</h1>
+                    <img src="images/categories/bag.png" alt="">
+                </div>
+                <div class="cc flex items-center gap-20 text-white pr-3 pl-10 py-2 bg-gradient-to-b from-blue-400 to-blue-700 rounded-2xl">
+                    <h1 class="text-[36px] font-semibold">Shoes</h1>
+                    <img src="images/categories/shoes.png" alt="">
+                </div>
+            </div>
+        </div>
     </header>
     
     <main class="">
@@ -25,7 +96,7 @@
     </main>
 
     <footer class="">
-        
+
     </footer>
 </body>
 </html>
