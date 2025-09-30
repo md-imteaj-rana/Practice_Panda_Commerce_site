@@ -37,13 +37,13 @@
             <div class="">
                 <ul class="font-bold text-gray-500 flex gap-5">
                     <li class=""><a href="">Home</a></li>
-                    <li class=""><a href="">Product<i class="fa-solid fa-angle-down"></i></a>
-                    <ul class="dropdown-nav-items hidden">
-                    <li><a href="#">Product 1</a></li>
-                    <li><a href="#">Product 2</a></li>
-                    <li><a href="#">Product 3</a></li>
-                    <li><a href="#">Product 4</a></li>
-                    <li><a href="#">Product 5</a></li>
+                    <li class="relative group"><a href="">Product<i class="fa-solid fa-angle-down"></i></a>
+                    <ul class="dropdown-nav-items absolute hidden group-hover:block bg-white mt-2 w-22 text-center rounded-lg">
+                    <li><a href="#" class="py-2 block">Product 1</a></li>
+                    <li><a href="#" class="py-2 block">Product 2</a></li>
+                    <li><a href="#" class="py-2 block">Product 3</a></li>
+                    <li><a href="#" class="py-2 block">Product 4</a></li>
+                    <li><a href="#" class="py-2 block">Product 5</a></li>
                       </ul>
                     </li>
                     <li class=""><a href="">Backpack</a></li>
@@ -164,8 +164,13 @@
     </main>
 
     <footer class="bg-white p-20">
-        <div class="bg-[#FEEAE9] p-7 rounded-2xl">
-            
+        <div class="bg-[#FEEAE9] py-35 px-7 rounded-2xl text-center">
+            <h2 class="text-[30px] font-bold">LET'S STAY IN TOUCH</h2>
+            <p class="text-[16px] text-gray-500 mb-3">Get updates on sales specials and more</p>
+            <div class="flex items-center justify-center">
+                <input type="text" placeholder="Enter your email" class="input bg-white py-4 pl-7 pr-16 w-lg rounded-bl-lg rounded-tl-lg" />
+                <button class="btn btn-secondary text-white bg-[#FF4D94] px-8 py-4 my-4 font-semibold text-[16px] rounded-br-lg rounded-tr-lg"><a href="">Send</a></button>
+            </div>
         </div>
     </footer>
 </body>
